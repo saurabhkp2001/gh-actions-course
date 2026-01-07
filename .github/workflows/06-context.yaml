@@ -16,7 +16,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             MY_JOB_VAR: "job"
-            MY_OWERWRITTEN_VAR: "job"
+            MY_OVERWRITTEN_VAR: "job"
         steps:
             - name: Display Information
               run: |
@@ -35,10 +35,10 @@ jobs:
                 MY_OVERWRITTEN_VAR: "step"
               run: |
                 echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo "Overwritten env: ${{env.MY_OWERWRITTEN_VAR}}"
+                echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
             - name: Print Env variables
               run: |
                 echo "Workflow env: ${{env.MY_WORKFLOW_VAR}}"
-                echo "Overwritten env: ${{env.MY_OWERWRITTEN_VAR}}"
+                echo "Overwritten env: ${{env.MY_OVERWRITTEN_VAR}}"
 
 
