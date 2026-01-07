@@ -1,5 +1,5 @@
 name: 06 - Context
-
+run-name: My custome workflow run name - ${{runner.os}}
 on: 
     push:
     workflow_dispatch:
